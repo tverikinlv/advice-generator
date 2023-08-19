@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/tverikinlv/advice-generator
-- Live Site URL: https://tverikinlv.github.io/advice-generator
+- Live Site URL: https://tverikinlv.github.io/advice-generator/
 
 ## My process
 
