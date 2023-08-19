@@ -1,0 +1,70 @@
+.advice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 540px;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+
+    background-color: var(--grayish-blue);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 15px 5px var(--dark-grayish-blue);
+
+    font-family: var(--family);
+}
+
+.advice__id{
+    padding: 1rem 0;
+
+    font-size: 0.8rem;
+    color: var(--neon-green);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.advice__text{
+    margin: 0;
+    text-align: center;
+    font-size: var(--fs-quote);
+    color: var(--light-cyan);
+}
+
+.advice__text::after{
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    content: url('./../../images/pattern-divider-mobile.svg');
+    color: var(--light-cyan);
+}
+
+.dice-button{
+    margin-bottom: -51px;
+    width: 72px;
+    height: 72px;
+    background: url('./../../images/icon-dice.svg') no-repeat center;
+    border-radius: 50%;
+    border-width: 0;    
+    background-color: var(--neon-green);
+}
+
+@media (hover: hover) {
+    .dice-button:hover {
+        cursor: pointer;
+        box-shadow: 0 0 35px 5px var(--neon-green);
+    }
+}
+
+@media (hover: none) {
+    .dice-button:active {
+        cursor: pointer;
+        box-shadow: 0 0 35px 5px var(--neon-green);
+    }
+}
+
+@media (min-width: 480px) {
+
+    .advice__text::after{
+        content: url('./../../images/pattern-divider-desktop.svg');
+    }
+    
+}
